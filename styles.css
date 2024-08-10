@@ -1,0 +1,128 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #411911;
+    color: #e7e7c5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1.6;
+}
+
+#game-container {
+    background-color: #7db8a6;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(209, 161, 50, 0.3);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: #411911;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #d96d2c;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#inventory, #trading-area {
+    background-color: #e7e7c5;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #411911;
+}
+
+#inventory-list, #npc-offer {
+    list-style-type: none;
+    padding: 0;
+}
+
+#inventory-list li, #npc-offer {
+    background-color: #d1a132;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: #c84225;
+    color: #e7e7c5;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #d96d2c;
+}
+
+#refresh-button {
+    display: block;
+    margin: 1.5rem auto 0;
+    background-color: #d96d2c;
+}
+
+#refresh-button:hover {
+    background-color: #c84225;
+}
+
+#congrats-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #7db8a6;
+    color: #411911;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(217, 109, 44, 0.5);
+}
+
+#congrats-message h2 {
+    color: #c84225;
+    margin-bottom: 1rem;
+}
+
+#congrats-message p {
+    margin-bottom: 1.5rem;
+}
+
+#congrats-message button {
+    background-color: #d96d2c;
+}
+
+#congrats-message button:hover {
+    background-color: #c84225;
+}
+
+@media (max-width: 600px) {
+    #game-container {
+        padding: 1rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+    }
+}
